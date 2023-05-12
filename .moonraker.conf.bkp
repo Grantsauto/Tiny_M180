@@ -3,6 +3,10 @@ host = 0.0.0.0
 port = 7125
 max_upload_size = 1024
 
+[data_store]
+temperature_store_size = 600
+gcode_store_size = 1000
+
 [file_manager]
 enable_object_processing = False
 
@@ -28,6 +32,12 @@ trusted_clients =
 [octoprint_compat]
 
 [history]
+
+[zeroconf]
+
+[machine]
+provider = systemd_dbus
+shutdown_action = poweroff
 
 [timelapse]
 output_path = ~/timelapse/
@@ -59,7 +69,7 @@ is_system_service = False
 [wled arch]
 type = http
 address = 192.168.0.206
-initial_preset = 10
+initial_preset = 1
 chain_count = 40
 
 [update_manager client mobileraker-companion]
