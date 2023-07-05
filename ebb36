@@ -1,3 +1,5 @@
+# [include toolhead_btt_ebbcan36.cfg]
+
 ## BOARD PINS
 [board_pins EBB36_G0B1_v1.2] 
 mcu: can0
