@@ -117,3 +117,5 @@ origin = https://github.com/Arksine/CanBoot.git
 path = ~/CanBoot
 is_system_service = False
 
+[webcam]
+
