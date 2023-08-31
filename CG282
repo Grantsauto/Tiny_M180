@@ -12,3 +12,12 @@ gcode:
   {% if 'y' in printer.toolhead.homed_axes %}{% set home = home.replace('Y', '') %}{% endif %}
   {% if 'z' in printer.toolhead.homed_axes %}{% set home = home.replace('Z', '') %}{% endif %}
   {% if home %} G28 {home} {% endif %}
+
+[gcode_macro M109]
+rename_existing: M99109
+gcode:
+    {% set s = params.S|float %}
+      SET_HEATER_TEMPERATURE HEATER=extruder TARGET={s}  ; Set hotend temp
+    {% if s != 0 %}
+      TEMPERATURE_WAIT SENSOR=extruder MINIMUM={s} ; Wait for hotend temp
+    {% endif %}
