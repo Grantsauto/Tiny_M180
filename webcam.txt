@@ -14,7 +14,7 @@
 # Defaults to auto
 #
 camera="usb"
-#camera_usb_options="-r 640x480 -f 10 -d /dev/v4l/by-id/usb-Sonix_Technology_Co.__Ltd._USB_2.0_Camera_SN0001-video-index0"
+#camera_usb_options="-r 640x480 -f 15 -d /dev/v4l/by-id/usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-video-index0"
 
 ### Additional options to supply to MJPG Streamer for the USB camera
 #
@@ -22,7 +22,7 @@ camera="usb"
 #
 # Defaults to a resolution of 640x480 px and a framerate of 10 fps
 #
-camera_usb_options="-r 640x480 -f 15 -d usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-video-index0 
+camera_usb_options="-r 640x480 -f 15 -d /dev/v4l/by-id/usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-video-index0" 
 # /dev/v4l/by-id/usb-Sonix_Technology_Co.__Ltd._USB_2.0_Camera_SN0001-video-index0"
 
 ### Additional webcam devices known to cause problems with -f
@@ -61,7 +61,7 @@ camera_usb_options="-r 640x480 -f 15 -d usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-vide
 #camera_raspi_options="-awb sun"
 #camera_raspi_options="-awb off"
 #camera_raspi_options="-r 640x480"
-
+v4l2ctl: focus_auto=0,focus_absolute=30
 
 
 ### Configuration of camera HTTP output
@@ -83,4 +83,4 @@ camera_usb_options="-r 640x480 -f 15 -d usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-vide
 #
 # Available options:
 #   mjpeg [default] - stable MJPG-streamer
-#camera_streamer=mjpeg
+camera_streamer=mjpeg
