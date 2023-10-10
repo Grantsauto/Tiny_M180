@@ -14,7 +14,7 @@
 # Defaults to auto
 #
 camera="usb"
-#camera_usb_options="-r 640x480 -f 15 -d /dev/v4l/by-id/usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-video-index0"
+#camera_usb_options="-r 1280x720 -f 15 -d /dev/v4l/by-id/usb-Vimicro_Corp._HBVCAM_FHD_CAMERA-video-index0"
 
 ### Additional options to supply to MJPG Streamer for the USB camera
 #
@@ -61,7 +61,7 @@ camera_usb_options="-r 640x480 -f 15 -d /dev/v4l/by-id/usb-Vimicro_Corp._HBVCAM_
 #camera_raspi_options="-awb sun"
 #camera_raspi_options="-awb off"
 #camera_raspi_options="-r 640x480"
-v4l2ctl: focus_auto=0,focus_absolute=30
+v4l2ctl: focus_auto=0,focus_absolute=60
 
 
 ### Configuration of camera HTTP output
