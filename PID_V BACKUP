@@ -1,0 +1,45 @@
+#*# [extruder]
+#*# control = pid_v
+#*# pid_kp = 26.237
+#*# pid_ki = 2.691
+#*# pid_kd = 63.956
+#*# pid_version = 1
+#*# pid_target = 255.00
+#*# pid_tolerance = 0.0300
+#*#
+#*# [heater_bed]
+#*# control = pid
+#*# pid_kp = 35.062
+#*# pid_ki = 1.875
+#*# pid_kd = 163.913
+#*# pid_version = 1
+#*# pid_target = 70.00
+#*# pid_tolerance = 0.0100
+
+#*#
+#*# [pid_profile extruder pla1]
+#*# pid_version = 1
+#*# pid_target = 230.00
+#*# pid_tolerance = 0.0100
+#*# control = pid_v
+#*# pid_kp = 19.539
+#*# pid_ki = 1.768
+#*# pid_kd = 53.978
+#*#
+#*# [pid_profile heater_bed pla1]
+#*# pid_version = 1
+#*# pid_target = 70.00
+#*# pid_tolerance = 0.0100
+#*# control = pid
+#*# pid_kp = 35.062
+#*# pid_ki = 1.875
+#*# pid_kd = 163.913
+#*#
+#*# [pid_profile extruder abs1]
+#*# pid_version = 1
+#*# pid_target = 255.00
+#*# pid_tolerance = 0.0300
+#*# control = pid_v
+#*# pid_kp = 26.237
+#*# pid_ki = 2.691
+#*# pid_kd = 63.956
