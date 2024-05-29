@@ -1,0 +1,12 @@
+[controller_temperature_fan my_temp_fan]
+pin: PB5
+sensor_type: EPCOS 100K B57560G104F
+sensor_pin: PK6
+control: pid
+pid_Kp: 22.2
+pid_Ki: 1.08
+pid_Kd: 114
+min_temp: 0
+max_temp: 210
+
+stepper: stepper_x, stepper_y
